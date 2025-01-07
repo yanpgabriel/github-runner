@@ -5,8 +5,6 @@ FROM ubuntu:20.04
 ARG RUNNER_VERSION
 ENV DEBIAN_FRONTEND=noninteractive
 
-LABEL RunnerVersion=${RUNNER_VERSION}
-
 # update the base packages + add a non-sudo user
 RUN apt-get update -y && apt-get upgrade -y && useradd -m docker
 
