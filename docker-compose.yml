@@ -5,5 +5,9 @@ services:
       context: .
       args:
         RUNNER_VERSION: 'arm-2.321.0'
-    env_file:
-      - ./vars.env
+    environment:
+      GH_TOKEN: ${GH_TOKEN}
+      GH_OWNER: ${GH_OWNER}
+      GH_REPOSITORY: ${GH_REPOSITORY}
+    #env_file:
+    #  - ./vars.env
