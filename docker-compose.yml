@@ -6,9 +6,9 @@ services:
       args:
         ARCHITECTURE: 'arm'
         RUNNER_VERSION: '2.321.0'
-    environment:
-      GH_TOKEN: ${GH_TOKEN}
-      GH_OWNER: ${GH_OWNER}
-      GH_REPOSITORY: ${GH_REPOSITORY}
-    #env_file:
-    #  - ./vars.env
+    #environment:
+    #  GH_TOKEN: ${GH_TOKEN}
+    #  GH_OWNER: ${GH_OWNER}
+    #  GH_REPOSITORY: ${GH_REPOSITORY}
+    env_file:
+      - ./stack.env
