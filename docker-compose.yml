@@ -1,0 +1,9 @@
+services:
+  runner:
+    image: github-runner:latest
+    build:
+      context: .
+      args:
+        RUNNER_VERSION: 'arm-2.321.0'
+    env_file:
+      - ./vars.env
